@@ -19,6 +19,7 @@ for model in models.keys():
         models[model][env] = [x.replace(f"{folder}/results/{model}/{env}/",'').replace('.txt','') for x in glob.glob(f"{folder}/results/{model}/{env}/*.txt")]
 
 st.sidebar.header('LLM Webapp Experiments')
+st.sidebar.markdown('See [llm-webapps](https://github.com/the-crypt-keeper/llm-webapps) for more information.')
 selected_model = st.sidebar.selectbox('Select a model', models.keys())
 selected_env = st.sidebar.selectbox('Select an environment', models[selected_model].keys())
 selected_project = st.sidebar.selectbox('Select a project', models[selected_model][selected_env])
@@ -43,10 +44,10 @@ except:
 if selected_env == 'python_streamlit':
     compiled_code = compile(filebody, filename=fname_to_run, mode='exec')
     exec(compiled_code, {})
-    st.code(filebody)
+    st.code(filebody, language='python', line_numbers=True)
 elif selected_env == 'HTML_jQuery':
     components.html(filebody, height=400, scrolling=True)
-    st.code(filebody)
+    st.code(filebody, language='html', line_numbers=True)
 else:
     # babel-standalone chokes on imports and export - strip them out
     hacked_js = '\n'.join([x for x in filebody.split('\n') if not 'export default' in x and not 'import' in x])
@@ -83,4 +84,4 @@ else:
     </body>
     """
     components.html(react_template, height=400, scrolling=True)
-    st.code(filebody)
+    st.code(filebody, language='javascript', line_numbers=True)

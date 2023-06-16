@@ -4,12 +4,21 @@ How well can LLM create a simple webapp? Let's find out.
 
 # Tasks
 
-<TODO>
+## greet
 
-- timezone
-- greet
-- counter
-- sortlines
+Greet the user in their native language.
+
+## timezone
+
+What time is it in different timezones? A simple task in terms of UX but tricky processing to get right.
+
+## counter
+
+An up/down counter with reset.
+
+## sortlines
+
+A simple data processing application.
 
 # Running
 
