@@ -4,10 +4,22 @@ How well can LLM create a simple webapp? Let's find out.
 
 # Tasks
 
+<TODO>
+
 - timezone
 - greet
 - counter
 - sortlines
+
+# Running
+
+`generate.py`
+
+NOTE: The starchat gradio that the generations is aimed at it is down right now.
+
+# Results
+
+`streamlit run app.py` to open the result browser
 
 ## Notes
 
