@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greetings</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#greet").click(function(){
+				var name = $("#name").val();
+				var language = $("#language").val();
+				if(language == "English"){
+					alert("Hello " + name + "!");
+				}
+				else if(language == "French"){
+					alert("Bonjour " + name + "!");
+				}
+				else if(language == "Spanish"){
+					alert("Hola " + name + "!");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<label for="language">Select Language:</label>
+	<select id="language">
+		<option value="English">English</option>
+		<option value="French">French</option>
+		<option value="Spanish">Spanish</option>
+	</select>
+	<br><br>
+	<label for="name">Enter Name:</label>
+	<input type="text" id="name" name="name"><br><br>
+	<button id="greet">Greet</button>
+</body>
+</html>

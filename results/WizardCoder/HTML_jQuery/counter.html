@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counter App</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var counter = 1;
+			$('#counter').text(counter);
+
+			$('#increase').click(function(){
+				counter++;
+				if(counter < 1){
+					counter = 1;
+				}
+				$('#counter').text(counter);
+			});
+
+			$('#decrease').click(function(){
+				counter--;
+				if(counter < 1){
+					counter = 1;
+				}
+				$('#counter').text(counter);
+			});
+
+			$('#reset').click(function(){
+				counter = 1;
+				$('#counter').text(counter);
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>Counter App</h1>
+	<p>Current Count: <span id="counter">1</span></p>
+	<button id="increase">Increase</button>
+	<button id="decrease">Decrease</button>
+	<button id="reset">Reset</button>
+</body>
+</html>

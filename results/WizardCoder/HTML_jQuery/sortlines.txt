@@ -1,0 +1,5 @@
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction: Write a HTML jQuery application with a large input text area on the left side, an output area on the right side and a 'Process' button below them.  When the button is clicked, break the input text into lines, sort the lines, remove any duplicates and display the result in the output area.  Please return only the full, complete source code for the application in a single code block.
+
+### Response:

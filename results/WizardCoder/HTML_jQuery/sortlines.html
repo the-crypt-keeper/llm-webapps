@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sort and Remove Duplicates</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#process').click(function(){
+				var input = $('#input').val();
+				var lines = input.split('\n');
+				var uniqueLines = lines.filter(function(item, pos) {
+					return lines.indexOf(item) == pos;
+				});
+				uniqueLines.sort();
+				$('#output').val(uniqueLines.join('\n'));
+			});
+		});
+	</script>
+</head>
+<body>
+	<div>
+		<textarea id="input" rows="20" cols="50"></textarea>
+		<br>
+		<button id="process">Process</button>
+	</div>
+	<div>
+		<textarea id="output" rows="20" cols="50" readonly></textarea>
+	</div>
+</body>
+</html>

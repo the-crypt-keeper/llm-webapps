@@ -1,0 +1,5 @@
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction: Write a HTML jQuery application that displays a Time Zone dropdown list and shows the current time in the selected time zone.  Please return only the full, complete source code for the application in a single code block.
+
+### Response:

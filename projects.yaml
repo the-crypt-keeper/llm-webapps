@@ -1,0 +1,31 @@
+Projects:
+- Name: timezone
+  Prompt: |-
+    Write a {{language}} {{library}} application that displays a Time Zone dropdown list and shows the current time in the selected time zone.
+- Name: greet
+  Prompt: |-
+    Write a {{language}} {{library}} application that displays a drop-down selection box with the options English, French and Spanish,  a text entry field captioned Name and the button "Greet".  When the button is clicked, greet the user by name in the selected language.
+- Name: counter
+  Prompt: |-
+    Write a {{language}} {{library}} application that displays a large counter with an initial value of 1 and below that a single row with three buttons: Increase, Decrease and Reset. The Increase button should add one to the counter, the Reset button should set the counter back to 1.  The Decrease button should subtract one to the counter, but do not allow it to go below 1.
+- Name: sortlines
+  Prompt: |- 
+    Write a {{language}} {{library}} application with a large input text area on the left side, an output area on the right side and a 'Process' button below them.  When the button is clicked, break the input text into lines, sort the lines, remove any duplicates and display the result in the output area.
+
+Variables:
+- language: HTML
+  library: jQuery
+- language: javascript
+  library: React
+- language: python
+  library: streamlit
+
+Templates:
+  WizardCoder: |-
+    Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+    ### Instruction: {{prompt}} Please return only the full, complete source code for the application in a single code block.
+
+    ### Response:
+  ChatGPT: |-
+    {{prompt}}

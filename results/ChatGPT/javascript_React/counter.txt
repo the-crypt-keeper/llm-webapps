@@ -1,0 +1,1 @@
+Write a javascript React application that displays a large counter with an initial value of 1 and below that a single row with three buttons: Increase, Decrease and Reset. The Increase button should add one to the counter, the Reset button should set the counter back to 1.  The Decrease button should subtract one to the counter, but do not allow it to go below 1.

@@ -1,0 +1,5 @@
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+### Instruction: Write a python streamlit application that displays a drop-down selection box with the options English, French and Spanish,  a text entry field captioned Name and the button "Greet".  When the button is clicked, greet the user by name in the selected language.  Please return only the full, complete source code for the application in a single code block.
+
+### Response:

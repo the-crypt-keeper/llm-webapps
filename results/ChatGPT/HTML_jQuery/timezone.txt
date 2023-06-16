@@ -1,0 +1,1 @@
+Write a HTML jQuery application that displays a Time Zone dropdown list and shows the current time in the selected time zone.
