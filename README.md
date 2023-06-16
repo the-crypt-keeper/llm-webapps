@@ -24,8 +24,6 @@ A simple data processing application.
 
 `generate.py`
 
-NOTE: The starchat gradio that the generations is aimed at it is down right now.
-
 # Results
 
 `streamlit run app.py` to open the result browser

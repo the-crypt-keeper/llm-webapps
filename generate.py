@@ -18,7 +18,7 @@ def run_chatgpt(prompt):
 def run_wizardcoder(prompt):
     from gradio_client import Client
 
-    client = Client('https://375cead61e4db124.gradio.app/')
+    client = Client('https://8821d10c477083e9.gradio.app/')
     wizardcoder_params = { 'temperature': 1.0, 'beams': 1, 'max_tokens': 1024, 'top_k': 40, 'top_p': 1.0 }
     job = client.submit(
 			prompt,
