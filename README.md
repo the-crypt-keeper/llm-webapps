@@ -2,6 +2,13 @@
 
 How well can LLM create a simple webapp? Let's find out.
 
+# Results
+
+[See Results On HuggingFace Spaces](https://huggingface.co/spaces/mike-ravkine/llm-webapps-results)
+
+`streamlit run app.py` to open the result browser
+
+
 # Tasks
 
 ## greet
@@ -23,12 +30,6 @@ A simple data processing application.
 # Running
 
 `generate.py`
-
-# Results
-
-[See Results On HuggingFace Spaces](https://huggingface.co/spaces/mike-ravkine/llm-webapps-results)
-
-`streamlit run app.py` to open the result browser
 
 ## Notes
 
