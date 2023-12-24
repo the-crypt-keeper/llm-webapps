@@ -18,6 +18,8 @@ for model in models.keys():
     for env in models[model].keys():
         models[model][env] = [x.replace(f"{folder}/results/{model}/{env}/",'').replace('.txt','') for x in glob.glob(f"{folder}/results/{model}/{env}/*.txt")]
 
+st.set_page_config(page_title='LLM Webapp Experiments', initial_sidebar_state="expanded", menu_items={"Get help": "https://github.com/the-crypt-keeper/llm-webapps"})
+
 st.sidebar.header('LLM Webapp Experiments')
 st.sidebar.markdown('See [llm-webapps](https://github.com/the-crypt-keeper/llm-webapps) for more information.')
 selected_model = st.sidebar.selectbox('Select a model', models.keys())
